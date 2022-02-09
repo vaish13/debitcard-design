@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            debit-card design
+        </title>
+        <style>
+            
+            @import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap');
+        
+            .debit-card{
+                height: 250px;
+                width: 450px;
+                background-color: hsl(148, 100%, 76%);
+                background-image: linear-gradient(45deg, #85FFBD 0%, #FFFB7D 100%);
+                border-radius: 25px;
+                display:block;
+                margin: auto;
+                margin-top: 50px;
+               
+            }
+            .img-chip{
+                height: 70px;
+                margin: 10px;
+            }
+            .img-visa{
+                width: 70px;
+                margin: 10px;
+            }
+            .container-front{
+                display: flex;
+                justify-content: space-between;
+            }
+            .container-number{
+                display: flex;
+                justify-content: space-evenly;
+            }
+            .num{
+                font-family: 'Inconsolata', monospace;
+                font-size: 25px;
+                font-weight: bold;
+            }
+            .container-details{
+                display: flex;
+                justify-content: space-around;
+            }
+            .info-title{
+                font-size: 15px;
+                font-style: italic;
+            }
+            .card-info{
+                 font-family: 'Inconsolata', monospace ;
+                 font-size: 20px;
+                 font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="debit-card">
+            <div class="debit-card-content">
+
+                <div class="front">
+                    <div class="container-front">
+                        <img src="chip.png" class="img-chip"/>
+                        <img src="visa.png" class="img-visa"/>
+                    </div>
+
+                    <div class="container-number">
+                       <span class="num">1345</span>
+                       <span class="num">6743</span>
+                       <span class="num">8987</span>
+                       <span class="num">5431</span>
+                    </div>
+                    <div class="container-details">
+                        <span>
+                            <p class="info-title">Card Holder Name</p>
+                            <p class="card-info">Vaishnavi Takwat</p>
+                        </span>
+
+                        <span>
+                            <p class="info-title">Validity</p>
+                            <P class="card-info">05/2026</P>
+                        </span>
+                    </div>
+                    
+                </div>
+            </div>
+
+        </div>
+    </body>
+</html>
